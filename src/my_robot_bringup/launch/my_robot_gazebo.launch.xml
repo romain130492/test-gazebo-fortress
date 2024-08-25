@@ -9,7 +9,7 @@
   <include file="$(find-pkg-share ros_ign_gazebo)/launch/ign_gazebo.launch.py">
     <!--  <arg name="ign_args" value="-r $(find-pkg-share my_robot_bringup)/worlds/test_world.sdf verbose" /> -->
     <!--     <arg name="ign_args" value="-erbose" /> -->
-    <arg name="ign_args" value="-r $(find-pkg-share my_robot_bringup)/worlds/empty_world_obstacles.sdf --verbose" />
+    <arg name="ign_args" value="-r $(find-pkg-share my_robot_bringup)/worlds/empty_world.sdf --verbose" />
   </include>
 
   <node pkg="ros_ign_gazebo" exec="create" args="-topic robot_description -name my_robot -z 1" />
